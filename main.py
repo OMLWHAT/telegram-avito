@@ -3,7 +3,7 @@ import db
 import utils
 import os
 
-API_TOKEN = 2045341990:AAF-8EzesmPl1GpKLHxXP__7CyragXK80zg
+API_TOKEN = os.environ.get('BOT_API_TOKEN')
 
 if not API_TOKEN:
     raise KeyError('Telegram bot token missed')
